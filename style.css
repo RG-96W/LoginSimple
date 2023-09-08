@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Mina&display=swap');
+
+body {
+    font-family: 'Mina', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: #f1f1f1;
+
+}
+
+
+.top__bar {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 50px;
+    color: #a9a9a9;
+    align-items: center;
+    justify-content: center;
+}
+.top__bar__cell {
+    background-color: #ffffff;
+    display: none;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 50px;
+    color: #a9a9a9;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.icons {
+    padding-left: 16px;
+    padding-right: 3px;
+}
+
+
+
+.content {
+    width: 396px;
+    height: 522px;
+    background-color: #ffff;
+    border-radius: 16px;
+    position: absolute;
+    /* top: 50%; */
+    animation: content__position 5s infinite;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+@keyframes content__position {
+    0%, 100% {
+        top: 49%;
+        box-shadow: 10px 10px 5px 3px rgba(0,0,0,0.29);
+
+    }
+    50% {
+        top: 50%;
+        box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.51);
+    }
+}
+
+
+
+
+.cont__form__login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.cont__title {
+    color: #a9a9a9;
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 36px;
+    padding-top: 64px;
+}
+
+.cont__name {
+    color: #a9a9a9;
+    font-size: 16px;
+}
+
+.cont__login__register {
+    color: #a9a9a9;
+    font-size: 16px;
+    text-align: end;
+    padding-bottom: 64px;
+    padding-top: 8px;
+}
+
+.cont__password {
+    color: #a9a9a9;
+    font-size: 16px;
+}
+
+.cont__password__lost {
+    color: #a9a9a9;
+    font-size: 16px;
+    text-align: end;
+    padding-bottom: 24px;
+    padding-top: 8px;
+}
+
+.cont__login__form {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.name {
+    padding: 5px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #a9a9a9;
+    border-style: hidden;
+    border-radius: 0px;
+    box-shadow: 0px 2px 0px rgba(169,169,169,.7);
+    text-shadow: 0px 0px 5px rgba(66,66,66,.0);
+}
+.name:focus {
+    padding: 5px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #a9a9a9;
+    border-style: hidden;
+    border-radius: 0px;
+    box-shadow: 0px 2px 0px #57D9B9;
+    text-shadow: 0px 0px 5px #57D9B9;
+
+    outline:none;
+}
+.name:focus + label {
+    color: #57D9B9;
+}
+
+
+
+.password {
+    padding: 5px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #a9a9a9;
+    border-style: hidden;
+    border-radius: 0px;
+    box-shadow: 0px 2px 0px rgba(169,169,169,.7);
+    text-shadow: 0px 0px 5px rgba(66,66,66,.0);
+}
+.password:focus {
+    padding: 5px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #a9a9a9;
+    border-style: hidden;
+    border-radius: 0px;
+    box-shadow: 0px 2px 0px #57D9B9;
+    text-shadow: 0px 0px 5px #57D9B9;
+
+    outline:none;
+}
+.password:focus + label {
+    color: #57D9B9;
+}
+
+.cont__login {
+	background-color:#57d9b8;
+	border-radius:8px;
+	border:1px solid #57d9b8;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	padding:16px 31px;
+	text-decoration:none;
+    margin-top: 20px; /* Ajuste o espaçamento conforme necessário */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.cont__login:hover {
+	background-color:#78e6ca;
+}
+.cont__login:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+.cont__form__cadastro {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+
+
+.cont__form__recsenha {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: #FFFFFF;
+    }
+    .content {
+        box-shadow: none;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        animation: none;
+        
+    }
+    .top__bar__cell {
+        display: flex;
+        height: 10vh;
+        font-size: 24px;
+    }
+    .cont__password {
+        padding-top:32px;
+        padding-top: 32px;
+        font-size: 24px;
+    }
+    .cont__name {
+        padding-top:32px;
+        padding-top: 32px;
+        font-size: 24px;
+    }
+    .cont__login__register {
+        font-size: 24px;
+    }
+    .cont__password__lost {
+        font-size: 24px;
+    }
+    .cont__title {
+        font-size: 100px;
+    }
+    .cont__login {
+        display: flex;
+        width: 90%;
+        height: 60px;
+        align-items: center;
+        justify-content: center;
+        font-size: 36px;
+    }
+    
+}
+
+
+
+/* ##################################    RESET   ################################## */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
